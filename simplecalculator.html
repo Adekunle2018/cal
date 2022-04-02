@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script>
+	var fValue = '';
+	var sValue = '';
+	function button1()
+	{
+		scrn.value += "1";
+	}
+	function button2()
+	{
+		scrn.value += 2;
+	}
+	function button3()
+	{
+		scrn.value += 3;
+	}
+	function button4()
+	{
+		scrn.value += 4;
+	}
+	function button5()
+	{
+		scrn.value += 5;
+	}
+	function button6()
+	{
+		scrn.value += 6;
+	}
+	function button7()
+	{
+		scrn.value += 7;
+	}
+	function button8()
+	{
+		scrn.value += 8;
+	}
+	function button9()
+	{
+		scrn.value += 9;
+	}
+	function button0()
+	{
+		scrn.value += 0;
+	}
+	function operators()
+	{
+		fValue = scrn.value;
+		scrn.value = '';
+	}
+	function equals()
+	{
+		sValue = scrn.value;
+		scrn.value = parseInt(fValue) + parseInt(sValue);
+		
+	}
+	
+	</script>
+
+
+</head>
+
+<body>
+<table>
+	<tr><td colspan="4" align="center"><input type="text" id="scrn" /></td>
+	<tr><td><button onClick="button1()">1</button></td><td><button onClick="button2()">2</button></td><td><button onClick="button3()">3</button></td><td><button onClick="operators()">+</button></td></tr>
+	<tr><td><button onClick="button4()">4</button></td><td><button onClick="button5()">5</button></td><td><button onClick="button6()">6</button></td><td><button onClick="operators()">-</button></td></tr><tr><td><button onClick="button7()">7</button></td><td><button onClick="button8()">8</button></td><td><button onClick="button9()">9</button></td><td><button onClick="operators()">/</button></td></tr><tr><td><button onClick="dot()">.</button></td><td><button onClick="button0()">0</button></td><td><button onClick="equals()">=</button></td><td><button onClick="operators()">*</button></td></tr>
+	</tr>
+	
+</table>
+</body>
+</html>
